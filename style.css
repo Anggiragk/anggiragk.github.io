@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    font-family: 'Tourney', cursive;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: rgb(240, 240, 248);
+    width: 100%;
+    height: 60px;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid black;
+    color: rgb(71, 67, 67);
+
+}
+
+.hr1{
+    width: 100%;
+    border-bottom: solid;
+    border-color: #000066;
+   
+}
+
+.jumbotron{
+    display: inline-block;
+    font-family: 'Lobster', cursive;
+    background-image: url('./gambar/jumbotron.jpg');
+    width: 100%;
+    height: 589px;
+}
+
+.jumbotron h1{
+    text-shadow: 0 0 30px #0000ff, 0 0 20px #800080, 0 0 5px #0000ff, 0 0 7px #800080, 0 0 9px #0000ff;
+    margin-top: 200px;
+    text-align: center;
+    font-size: 100px;
+    margin-left: 5px;
+    color: white;
+}
+
+.jumbotron p {
+    text-align: center;
+    color: white;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.explore{
+    font-size: 60px;
+    text-shadow: 0 0 30px #0000ff, 0 0 20px #800080, 0 0 5px #0000ff, 0 0 7px #800080, 0 0 9px #0000ff;
+}
+
+.explore2 {
+    opacity: 0;
+    display: block;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    text-shadow: 0 0 30px #0000ff, 0 0 20px #800080, 0 0 5px #0000ff, 0 0 7px #800080, 0 0 9px #0000ff;
+
+}
+
+.about{
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    min-height: 598px;
+    background-color: rgb(230, 230, 255);
+    
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: white;
+ }
+
+.foto{ 
+    background-image: url('./gambar/poto-hijau.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -9px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgb(38, 43, 43);
+    
+}
+
+.bio{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 5px auto;
+    display: flex;    
+}
+
+.kiri{
+    
+    flex-grow: 1;
+    padding: 10px;
+    text-align: justify;
+    
+}
+.kanan {
+    
+    flex-grow: 1;
+    border-left: 5px dashed black;
+    padding: 10px;
+    text-align: justify;
+    
+}
+
+.portfolio{
+    min-height: 598px;
+    margin-bottom: 20px;
+}
+
+.portfolio h1{
+    font-family: 'Tourney', cursive;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.bingkai{
+    width: 90%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(230, 230, 255);
+    margin: auto;
+}
+
+.gambar{
+    box-shadow: 0px 0px 5px 5px #666699;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    height: 220px;
+    width : 370px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.gambar:hover{
+    box-shadow: 0px 0px 10px 10px #260099;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+footer{
+    display: inline-block;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #00001a;
+}
+
+footer p{
+    font-family: 'Lobster', cursive;
+    color: white;
+    text-align: center;
+    margin-top: 18px;
+}
+
+
+@media screen and (max-width:1070px) {
+	.jumbotron h1{
+		font-size: 60px;
+	}
+
+    .jumbotron p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:700px) {
+	.jumbotron h1{
+		font-size: 40px;
+	}
+
+    .jumbotron p {
+        font-size: 20px;
+    }
+
+    .explore{
+        display: none;
+    }
+
+    .explore2{
+        opacity: 1;
+    }
+}
